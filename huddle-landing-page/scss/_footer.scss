@@ -1,0 +1,151 @@
+.footer {
+    padding: 2.2rem;
+    background-color: $main-dark-cyan;
+    color: #ffffff;
+    position: relative;
+
+    @include respond-to(tab) {
+        padding-top: 7rem;
+        padding-bottom: 7rem;
+    }
+
+    &::before {
+        @include pattern-bg;
+        background-image: url(./../../images/bg-footer-top-mobile.svg);
+        top: -10rem;
+
+        @include respond-to(tab) {
+            background-image: url(./../../images/bg-footer-top-desktop.svg);
+        }
+    }
+
+    &__main {
+        max-width: 100rem;
+        margin: 0 auto;
+        flex-direction: column;
+        gap: 9rem;
+
+        @include respond-to(tab) {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+// Newsletter
+.newsletter {
+
+    @include respond-to(tab) {
+        order: 2;
+        justify-self: flex-end;
+    }
+
+    &__title {
+        @include h2;
+    }
+
+    &__body {
+        @include body;
+        margin-bottom: 3rem;
+    }
+
+    &__form {
+        flex-direction: column;
+        gap: 1.4rem;
+
+        @include respond-to(tab) {
+            flex-direction: row;
+            gap: 1.8rem;
+        }
+
+        input {
+            padding: 1.5rem 1rem;
+            border-radius: .5rem;
+            border: .1rem solid $pink;
+
+            @include respond-to(tab) {
+                flex: 3;
+            }
+        }
+
+        button {
+            font-family: $font-body;
+            align-self: flex-end;
+            padding: 1.3rem 3.8rem;
+            outline: none;
+            font-size: 1.4rem;
+            font-weight: 700;
+            background-color: $pink;
+            border: none;
+            border-radius: .5rem;
+            color: #ffffff;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+
+            &:hover  {
+                opacity: .8;
+            }
+
+            @include respond-to(tab) {
+                align-self: center;
+                flex: 1;
+            }
+        }
+    }
+}
+
+// About
+.about {
+
+    @include respond-to(tab) {
+        order: 1;
+        justify-content: flex-end;
+    }
+
+    &__logo {
+        gap: .9rem;
+        align-items: center;
+
+        h1 {
+            font-size: 3.2rem;
+            color: #ffffff;
+        }
+    }
+
+    &__body {
+        @include body;
+        margin-bottom: 4rem;
+    }
+
+    &__content {
+
+        li:not(:last-child) {
+            margin-bottom: 2rem;
+        }
+
+        span {
+            margin-left: 1rem;
+            font-size: 1.4rem;
+
+            @include respond-to(tab) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &__social {
+        margin-top: 4rem;
+
+        ion-icon {
+            width: 2.8rem;
+            height: 2.8rem;
+            color: #ffffff;
+            margin-right: 1.2rem;
+            transition: all .2s ease-in-out;
+
+            &:hover {
+                opacity: .8;
+            }
+        }
+    }
+}

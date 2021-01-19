@@ -1,0 +1,69 @@
+// Background Pattern
+@mixin pattern-bg {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 10rem;
+    left: 0;
+    right: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+// Heading
+@mixin h2 {
+    font-size: 2.2rem;
+    font-weight: 700;
+
+    @include respond-to(tab) {
+        font-size: 2.8rem;
+    }
+}
+
+@mixin body {
+    font-size: 1.4rem;
+    font-weight: 400;
+    margin-top: 1.6rem;
+    line-height: 1.5;
+
+    @include respond-to(tab) {
+        font-size: 1.6rem;
+    }
+}
+
+// Button
+@mixin primary_button {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: $pink;
+    padding: 1.3rem 3rem;
+    border-radius: 2.5rem;
+    box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.35);
+    transition: all .3s ease-in-out;
+
+    &:hover {
+        box-shadow: 0px 4px 4px 0px rgba(0,0,0,0.35);
+    }
+
+    @include respond-to(tab) {
+        padding: 2rem 7.5rem;
+        border-radius: 3.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+// Breakpoints
+$breakpoint: (
+    'medium': '450px',
+    'tab': '765px',
+    'large': '900px',
+    'xlarge': '1400px'
+);
+
+@mixin respond-to($size) {
+    @media (min-width: map-get($breakpoint, $size)) {
+        @content;
+    }
+}

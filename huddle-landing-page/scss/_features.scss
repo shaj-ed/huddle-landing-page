@@ -1,0 +1,106 @@
+.features {
+    padding: 5rem 0;
+
+    @include respond-to(tab) {
+        padding: 16rem 0;
+    }
+
+    &__content {
+        text-align: center;
+        padding: 8rem 3.5rem 5rem 3.5rem;
+        background-color: $very-pale-blue;
+        display: grid;
+        gap: 7.2rem;
+        grid-template-columns: repeat(3, 1fr);
+
+        @include respond-to(tab) {
+            padding: 8rem 8rem 5rem 8rem;
+            grid-template-columns: repeat(6, 1fr);
+            align-items: center;
+        }
+
+        @include respond-to(larg) {
+            padding: 8rem 11rem 5rem 11rem;
+        }
+    }
+
+    &__bgone {
+        width: 100%;
+        position: relative;
+
+        &::after {
+            @include pattern-bg;
+            background-image: url(./../../images/bg-section-top-mobile-1.svg);
+            top: -10rem;
+
+            @include respond-to(tab) {
+                background-image: url(./../../images/bg-section-top-desktop-1.svg);
+            }
+        }
+
+        &::before {
+            @include pattern-bg;
+            background-image: url(./../../images/bg-section-bottom-mobile-1.svg);
+            bottom: -10rem;
+
+            @include respond-to(tab) {
+                background-image: url(./../../images/bg-section-bottom-desktop-1.svg);
+            }
+        }
+    }
+
+    &__bgtwo {
+        width: 100%;
+        position: relative;
+
+        &::after {
+            @include pattern-bg;
+            background-image: url(./../../images/bg-section-top-mobile-2.svg);
+            top: -10rem;
+
+            @include respond-to(tab) {
+                background-image: url(./../../images/bg-section-top-desktop-2.svg);
+            }
+        }
+
+        &::before {
+            @include pattern-bg;
+            background-image: url(./../../images/bg-section-bottom-mobile-2.svg);
+            bottom: -10rem;
+
+            @include respond-to(tab) {
+                background-image: url(./../../images/bg-section-bottom-desktop-2.svg);
+            }
+        }
+    }
+
+    &__unique {
+        background-color: transparent;
+        margin: 14rem 0;
+    }
+
+    &__snippet {
+        grid-column: span 3;
+
+        @include respond-to(tab) {
+            text-align: left;
+            direction: rtl;
+        }
+    }
+
+    &__title {
+        @include h2;
+    }
+
+    &__body {
+        @include body;
+    }
+
+    &__image {
+        grid-column: span 3;
+
+        img {
+            width: 100%;
+        }
+    }
+}

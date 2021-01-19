@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+  <!-- fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="./dist/css/styles.css">
+  
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header flex flex-jc-sb flex-ai-c">
+    <a href="#" class="header__logo">
+      <img src="./images/logo.svg" alt="Logo">
+    </a>
+
+    <a href="#" class="header__button">
+      Try It Free
+    </a>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__content">
+      <h1 class="hero__header">
+        Build The Community Your Fans Will Love
+      </h1>
+  
+      <p class="hero__body">
+        Huddle re-imagines the way we build communities. You have a voice, but so does 
+        your audience. Create connections with your users as you engage in genuine discussion. 
+      </p>
+  
+      <a href="#" class="hero__button">
+        Get Started For Free
+      </a>
+    </div>
+
+    <div class="hero__image">
+      <img src="./images/screen-mockups.svg" alt="Device Screen">
+    </div>
+  </section>
+
+  <section class="counts flex">
+    <div class="counts__content">
+      <span class="counts__icon">
+        <img src="./images/icon-communities.svg" alt="Communities">
+      </span>
+      <h2 class="counts__number">
+        1.4k+
+      </h2>
+      <p class="counts__title">
+        Communities Formed
+      </p>
+    </div>
+
+    <div class="counts__content">
+      <span class="counts__icon">
+        <img src="./images/icon-messages.svg" alt="Messages">
+      </span>
+      <h2 class="counts__number">
+        2.7m+
+      </h2>
+      <p class="counts__title">
+        Messages Sent
+      </p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="features__content features__bgone">
+      <div class="features__snippet">
+        <h2 class="features__title">
+          Grow Together
+        </h2>
+  
+        <p class="features__body">
+          Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form.
+        </p>
+      </div>
+      <div class="features__image">
+        <img src="./images/illustration-grow-together.svg" alt="Grow Together">
+      </div>
+    </div>
+
+    <div class="features__content features__unique">
+      <div class="features__image">
+        <img src="./images/illustration-flowing-conversation.svg" alt="Following Conversations">
+      </div>
+      <div class="features__snippet">
+        <h2 class="features__title">
+          Flowing Conversations
+        </h2>
+  
+        <p class="features__body">
+          You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+          just-in-time loading for a more natural flow.
+        </p>
+      </div>
+    </div>
+
+    <div class="features__content features__bgtwo">
+      <div class="features__snippet">
+        <h2 class="features__title">
+          Your Users
+        </h2>
+  
+        <p class="features__body">
+          It takes no time at all to integrate Huddle with your app's authentication solution. This means,once signed in to your app, your users can start chatting immediately.
+        </p>
+      </div>
+
+      <div class="features__image">
+        <img src="./images/illustration-your-users.svg" alt="Your Users">
+      </div>
+    </div>
+  </section>
+
+  <!-- Community cta -->
+  <section class="community">
+    <h2 class="community__title">
+      Ready To Build Your Community?
+    </h2>
+
+    <a href="#" class="community__button">
+      Get Started For Free
+    </a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer__main flex">
+      <section class="newsletter">
+        <h2 class="newsletter__title">
+          Newsletter
+        </h2>
+  
+        <p class="newsletter__body">
+          To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+          send you spam or pass on your email address
+        </p>
+  
+        <form action="#" class="newsletter__form flex">
+          <input type="text" name="name">
+          <button>Subscribe</button>
+        </form>
+      </section>
+  
+      <section class="about">
+        <a href="#" class="about__logo flex">
+          <img src="./images/icon-messages.svg" alt="Messages">
+          <h1>Huddle</h1>
+        </a>
+        <p class="about__body">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+          vestibulum a, ultrices quis sem.
+        </p>
+  
+        <ul class="about__content">
+          <li class="flex flex-ai-c">
+            <img src="./images/icon-phone.svg" alt="Phone">
+            <span>Phone: +1-543-123-4567</span>
+          </li>
+  
+          <li class="flex flex-ai-c">
+            <img src="./images/icon-email.svg" alt="Email">
+            <span>example@huddle.com</span>
+          </li>
+        </ul>
+  
+        <ul class="about__social">
+          <a href="#">
+            <ion-icon name="logo-facebook"></ion-icon>
+          </a>
+  
+          <a href="#">
+            <ion-icon name="logo-instagram"></ion-icon>
+          </a>
+  
+          <a href="#">
+            <ion-icon name="logo-twitter"></ion-icon>
+          </a>
+        </ul>
+      </section>
+    </div>
+  </footer>
+
+  <!-- Ionic Icon -->
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
